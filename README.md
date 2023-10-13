@@ -52,6 +52,11 @@ insert into departments values(104,'EDUCATION',6287564325,'Ravi')
 insert into departments values(105,'CHEMISTRY',8764536782,'Yashvant')
 insert into departments values(106,'HISTORY',9876543765,'Nilesh')
 insert into departments values(107,'CSIT',6574893087,'Lokesh')
+insert into departments values(2,'BIOLOGY',48349434344
+ENGINEERING
+PHILOSPHY
+SOCIAL SCIENCE
+HUMAN SCIENCE
 ```
 
 
