@@ -1,7 +1,7 @@
 # clg-sql-work
 here all the my work is saved
 
-employee table sructure 
+### employee table sructure 
 
 ```
 "Column Name","Data Type","Nullable","Default","Primary Key"
@@ -16,8 +16,7 @@ employee table sructure
 
 ```
 
-
- employee table data
+### employee table data
 ```csv
 "E_ID","E_NAME","E_AGE","E_DOB","SALARY","E_JOINING_DATE","E_DESIGNATION","DEPT_NO"
 "1","Jitendra","23","03/24/1999","123456.78","02/09/2020","Developer","10"
@@ -34,7 +33,7 @@ employee table sructure
 "13","Chaitanya","45","08/20/1978","90000","09/01/2000","Analyst","6"
 ```
 
-Department table
+### Department table
 ```csv
 
 "Column Name","Data Type","Nullable","Default","Primary Key"
@@ -43,6 +42,16 @@ Department table
 "DEPT_PHONRNO","NUMBER(10,0)","Yes","",""
 "HOD","VARCHAR2(12)","Yes","",""
 
+```
+
+### department table data
+```
+insert into departments values(101,'CSIT',9346674367,'Jitendra Sahu')
+insert into departments values(103,'PHYSICS',6574386547,'Mukesh')
+insert into departments values(104,'EDUCATION',6287564325,'Ravi')
+insert into departments values(105,'CHEMISTRY',8764536782,'Yashvant')
+insert into departments values(106,'HISTORY',9876543765,'Nilesh')
+insert into departments values(107,'CSIT',6574893087,'Lokesh')
 ```
 
 
