@@ -47,7 +47,7 @@ CREATE TABLE `department` (
 ```
 
 ### department table data
-```
+```sql
 INSERT INTO `department` (`DEPT_NO`, `DEPT_NAME`, `DEPT_PHONE`, `HOD`) VALUES
 (0, 'Computer Sci', '1234567890', 'Dr. Anjali Shar'),
 (1, 'Finance and ', '2345678901', 'Dr. Rajesh Verm'),
