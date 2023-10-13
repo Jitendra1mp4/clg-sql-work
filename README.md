@@ -1,6 +1,39 @@
 # clg-sql-work
 here all the my work is saved
 
+
+### create student table
+ CREATE TABLE STUDENT (
+     ENROLL_NO CHAR(6), 
+    NAME VARCHAR(25), 
+    AGE int(2), 
+    DOB DATE, 
+    CITY VARCHAR(25), 
+    STATE CHAR(2), 
+    CLASS CHAR(7),
+   )
+
+### insert data to student table
+"ENROLL_NO","NAME","AGE","DOB","CITY","STATE","CLASS","DEPT","SECTION"
+
+"CS351A","Jitendra Sahu","21","09/29/2002","Abhanpur","CG","MCA-I","cs-it","A"
+"CS351H","Amit Sharma","22","07/10/2001","Raipur","CG","MCA-I","cs-it","A"
+"CS351I","Neha Verma","23","11/25/2000","Bilaspur","CG","MCA-II","cs-it","A"
+"CS351J","Rajesh Kumar","24","09/30/1999","Durg","CG","MCA-III","cs-it","B"
+"CS351K","Pooja Singh","21","04/15/2002","Raigarh","CG","MCA-IV","cs-it","C"
+"CS351L","Rahul Tiwari","20","02/20/2003","Korba","CG","MCA-I","cs-it","A"
+"CS351M","Sneha Sharma","22","12/05/2001","Rajnandgaon","CG","MCA-II","cs-it","B"
+"CS351N","Amit Verma","23","08/17/2000","Ambikapur","CG","MCA-III","cs-it","B"
+"CS351O","Neha Singh","24","05/22/1999","Jagdalpur","CG","MCA-IV","cs-it","C"
+"CS351P","Rajesh Tiwari","21","01/30/2002","Bhilai","CG","MCA-I","cs-it","C"
+"CS351Q","Pooja Verma","20","03/25/2003","Raipur","CG","MCA-II","cs-it","A"
+"CS352H","Kanhaiya Chouhan","22","07/10/2001","Delhi","DL","MCA-I","cs-it","B"
+"CS352I","Himanshu Sahu","23","11/25/2000","Mumbai","MH","MCA-II","cs-it","A"
+"CS352J","Shubham","24","09/30/1999","Kolkata","WB","MCA-III","cs-it","B"
+"CS352K","Pooja Sinha","22","04/15/2002","Chennai","TN","MCA-IV","cs-it","C"
+"CS352L","Rakesh Sanday","20","02/20/2003","Bengaluru","KA","MCA-I","cs-it","C"
+
+
 ### employee table sructure 
 
 ```
