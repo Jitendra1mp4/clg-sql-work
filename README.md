@@ -46,17 +46,16 @@ here all the my work is saved
 
 ### department table data
 ```
-insert into departments values(101,'CSIT',9346674367,'Jitendra Sahu')
-insert into departments values(103,'PHYSICS',6574386547,'Mukesh')
-insert into departments values(104,'EDUCATION',6287564325,'Ravi')
-insert into departments values(105,'CHEMISTRY',8764536782,'Yashvant')
-insert into departments values(106,'HISTORY',9876543765,'Nilesh')
-insert into departments values(107,'CSIT',6574893087,'Lokesh')
-insert into departments values(2,'BIOLOGY',48349434344
-ENGINEERING
-PHILOSPHY
-SOCIAL SCIENCE
-HUMAN SCIENCE
+insert into departments values(1,'CSIT',9346674367,'Jitendra Sahu')
+insert into departments values(2,'PHYSICS',6574386547,'Mukesh')
+insert into departments values(3,'EDUCATION',6287564325,'Ravi')
+insert into departments values(4,'CHEMISTRY',8764536782,'Yashvant')
+insert into departments values(5,'HISTORY',9876543765,'Nilesh')
+insert into departments values(6,'BIOLOGY',98565659256,'T Sai')
+insert into departments values(7,'CSIT',6574893087,'Lokesh')
+insert into departments values(8,'ENGINEERING',9898659895,'Premraj')
+insert into departments values(9,'PHILOSPHY',7656659444,'Kanhaiya')
+insert into departments values(10,'SOCIAL SCIENCE',985659256,'Remma')
 ```
 
 
