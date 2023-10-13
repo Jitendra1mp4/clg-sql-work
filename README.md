@@ -33,3 +33,18 @@ employee table sructure
 "12","Alice","24","11/30/1999","456789.01","04/04/2018","Assistant Professor","3"
 "13","Chaitanya","45","08/20/1978","90000","09/01/2000","Analyst","6"
 ```
+
+Department table
+```csv
+
+"Column Name","Data Type","Nullable","Default","Primary Key"
+"DEPTNO","NUMBER(5,0)","Yes","",""
+"DEPTNAME","VARCHAR2(12)","Yes","",""
+"DEPT_PHONRNO","NUMBER(10,0)","Yes","",""
+"HOD","VARCHAR2(12)","Yes","",""
+
+```
+
+
+
+
