@@ -3,59 +3,59 @@ here all the my work is saved
 
 ### employee table sructure 
 
-```
-"Column Name","Data Type","Nullable","Default","Primary Key"
-"EMPNO","NUMBER(4,0)","No","","1"
-"ENAME","VARCHAR2(10)","Yes","",""
-"JOB","VARCHAR2(9)","Yes","",""
-"MGR","NUMBER(4,0)","Yes","",""
-"HIREDATE","DATE","Yes","",""
-"SAL","NUMBER(7,2)","Yes","",""
-"COMM","NUMBER(7,2)","Yes","",""
-"DEPTNO","NUMBER(2,0)","Yes","",""
-
+```sql
+create table employee(
+EMP_ID  VARCHAR(5),
+EMP_NAME VARCHAR(20),
+EMP_CITY VARCHAR(18),
+EMP_DOB DATE,
+EMP_AGE VARCHAR(2),
+EMP_DOJ DATE,
+DESIGNATION VARCHAR(10),
+SALARY float(8,2),
+DEPT_NO VARCHAR(5)
+);
 ```
 
 ### employee table data
-```csv
-"E_ID","E_NAME","E_AGE","E_DOB","SALARY","E_JOINING_DATE","E_DESIGNATION","DEPT_NO"
-"1","Jitendra","23","03/24/1999","123456.78","02/09/2020","Developer","10"
-"2","John","23","06/01/1999","123456.78","01/01/2021","Professor","10"
-"3","Shubham","25","01/01/1998","50000","01/01/2020","Manager","1"
-"4","Nilesh","30","05/05/1993","60000","06/01/2015","Analyst","2"
-"5","Jane","25","08/12/1997","234567.89","02/02/2020","Assistant Professor","3"
-"6","Pooja","40","03/15/1983","80000","04/01/2005","Manager","4"
-"7","Ravi","35","10/10/1988","70000","11/01/2010","Developer","3"
-"8","Bob","22","03/15/2001","345678.9","03/03/2019","Associate Professor","6"
-"9","David","26","12/31/1995","567890.12","05/05/2022","Professor","7"
-"11","Tom","26","12/31/1995","7890.12","05/05/2022","Peon","4"
-"12","Alice","24","11/30/1999","456789.01","04/04/2018","Assistant Professor","3"
-"13","Chaitanya","45","08/20/1978","90000","09/01/2000","Analyst","6"
+```sql
+INSERT INTO `employee`(`EMP_ID`, `EMP_NAME`, `EMP_AGE`, `EMP_DOB`, `SALARY`, `EMP_DOJ`, `DESIGNATION`, `DEPT_NO`, `EMP_CITY`) 
+VALUES 
+('E001', 'Jitendra', 23, '1999-03-24', 123456.78, '2020-02-09', 'Developer', 0, 'Raipur'),
+('E002', 'John', 23, '1999-06-01', 123456.78, '2021-01-01', 'Professor', 0, 'Bilaspur'),
+('E003', 'Shubham', 25, '1998-01-01', 50000, '2020-01-01', 'Manager', 1, 'Bhilai'),
+('E004', 'Nilesh', 30, '1993-05-05', 60000, '2015-06-01', 'Analyst', 2, 'Rajim'),
+('E005', 'Jane', 25, '1997-08-12', 234567.89, '2020-02-02', 'Assistant Professor', 3, 'Durg'),
+('E006', 'Pooja', 40, '1983-03-15', 80000, '2005-04-01', 'Manager', 4, 'Abhanpur'),
+('E007', 'Ravi', 35, '1988-10-10', 70000, '2010-11-01', 'Developer', 3, 'Raipur'),
+('E008', 'Bob', 22, '2001-03-15', 345678.9, '2019-03-03', 'Associate Professor', 6, 'Durg'),
+('E009', 'David', 26, '1995-12-31', 567890.12, '2022-05-05', 'Professor', 7, 'Bhilai'),
+('E011', 'Tom', 26, '1995-12-31', 7890.12, '2022-05-05', 'Peon', 4, 'Raipur'),
+('E012', 'Alice', 24, '1999-11-30', 456789.01, '2018-04-04', 'Assistant Professor', 3, 'Rajim'),
+('E013', 'Chaitanya', 45, '1978-08-20', 90000, '2000-09-01', 'Analyst', 6, 'Chennai');
 ```
 
 ### Department table
-```csv
+```sql
 
-"Column Name","Data Type","Nullable","Default","Primary Key"
-"DEPTNO","NUMBER(5,0)","Yes","",""
-"DEPTNAME","VARCHAR2(12)","Yes","",""
-"DEPT_PHONRNO","NUMBER(10,0)","Yes","",""
-"HOD","VARCHAR2(12)","Yes","",""
-
+CREATE TABLE `department` (
+  `DEPT_NO` int(3) DEFAULT NULL,
+  `DEPT_NAME` varchar(12) DEFAULT NULL,
+  `DEPT_PHONE` varchar(10) DEFAULT NULL,
+  `HOD` varchar(15) DEFAULT NULL
+) 
 ```
 
 ### department table data
 ```
-insert into departments values(1,'CSIT',9346674367,'Jitendra Sahu')
-insert into departments values(2,'PHYSICS',6574386547,'Mukesh')
-insert into departments values(3,'EDUCATION',6287564325,'Ravi')
-insert into departments values(4,'CHEMISTRY',8764536782,'Yashvant')
-insert into departments values(5,'HISTORY',9876543765,'Nilesh')
-insert into departments values(6,'BIOLOGY',98565659256,'T Sai')
-insert into departments values(7,'CSIT',6574893087,'Lokesh')
-insert into departments values(8,'ENGINEERING',9898659895,'Premraj')
-insert into departments values(9,'PHILOSPHY',7656659444,'Kanhaiya')
-insert into departments values(10,'SOCIAL SCIENCE',985659256,'Remma')
+INSERT INTO `department` (`DEPT_NO`, `DEPT_NAME`, `DEPT_PHONE`, `HOD`) VALUES
+(0, 'Computer Sci', '1234567890', 'Dr. Anjali Shar'),
+(1, 'Finance and ', '2345678901', 'Dr. Rajesh Verm'),
+(2, 'Marketing an', '3456789012', 'Dr. Priya Singh'),
+(3, 'Human Resour', '4567890123', 'Dr. Amit Kumar'),
+(4, 'Natural Scie', '5678901234', 'Dr. Neha Kapoor'),
+(6, 'Social Scien', '7890123456', 'Dr. Rahul Sharm'),
+(7, 'Research and', '8901234567', 'Dr. Vikram Gupt');
 ```
 
 
